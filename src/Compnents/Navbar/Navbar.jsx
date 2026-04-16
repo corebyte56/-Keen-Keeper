@@ -42,7 +42,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <a className="btn btn-ghost text-xl">KeenKeeper</a>
+          <Link to={'/'} className="btn btn-ghost text-xl">KeenKeeper</Link>
         </div>
 
         {/* Button */}
