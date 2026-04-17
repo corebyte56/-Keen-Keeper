@@ -1,27 +1,13 @@
 import React, { Children } from "react";
 import { useEffect, useState } from "react";
 import { createContext } from "react";
-
+import FriendData from '../../public/friendData.json'
 export const friendContext = createContext();
 
 const Context = ({ children }) => {
-  const [friendsData, setFriendsData] = useState([]);
+  const [friendsData, setFriendsData] = useState(FriendData);
 
-  const handleFriendsData = async () => {
-    try {
-      const res = await fetch("/friendData.json");
-      const data = await res.json();
-      setFriendsData(data);
-      // console.log(data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  useEffect(() => {
-    handleFriendsData();
-  }, []);
-
+ 
   const data = {
     setFriendsData,
     friendsData
