@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Card = ({ friend }) => {
   return (
-    <div className="bg-white w-64 rounded-2xl shadow-2xl p-5 text-center transition hover:-translate-y-2 hover:scale-105 duration-200 ease-out cursor-pointer">
+
+    <Link to={`/FriendDetails/${friend.id}`} className="bg-white w-64 rounded-2xl shadow-2xl p-5 text-center transition hover:-translate-y-2 hover:scale-105 duration-200 ease-out cursor-pointer">
       {/* Image */}
       <img
         src={friend.picture}
@@ -57,7 +59,7 @@ const Card = ({ friend }) => {
               : "On-Track"}
         </span>
       </div>
-    </div>
+    </Link>
   );
 };
 
