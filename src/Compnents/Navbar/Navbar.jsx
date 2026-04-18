@@ -1,6 +1,7 @@
 import { ChartLine, Home, Timer } from "lucide-react";
 import React from "react";
 import { Link } from "react-router";
+import Logo from '../../assets/Icons/logo.png'
 const Navbar = () => {
   return (
     <div className="w-full py-3 bg-base-100 shadow-sm sticky top-0 z-50 backdrop-blur-lg">
@@ -42,7 +43,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <Link to={'/'} className="btn btn-ghost text-xl">KeenKeeper</Link>
+          <Link to={'/'} className="btn btn-ghost"><img src={Logo} alt="KeenKeeper" /></Link>
         </div>
 
         {/* Button */}
