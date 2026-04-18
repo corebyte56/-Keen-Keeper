@@ -6,7 +6,6 @@ import VideoCard from "../../UI/VideoCard";
 
 const TimeLineCard = () => {
   const { callFunction, textFunction, videoFunction } = useContext(friendContext);
-  console.log(textFunction);
 
   return (
     <div>

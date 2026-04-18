@@ -8,7 +8,8 @@ const Context = ({ children }) => {
   const [friendsData, setFriendsData] = useState(FriendData);
   const [callFunction, setCallFunction] = useState([]); 
   const [textFunction, setTextFunction] = useState([]);
-  const [videoFunction, setVideoFunction] = useState([])
+  const [videoFunction, setVideoFunction] = useState([]);
+
 
   // call
   const handleCall = (findFriends) => {
@@ -19,7 +20,7 @@ const Context = ({ children }) => {
       toast.success(`Called to ${findFriends.name}`)
     }
 
-    console.log(findCalls);
+    // console.log(findCalls);
   };
 
 
@@ -33,7 +34,7 @@ const Context = ({ children }) => {
       toast.success(`Texted to ${findFriends.name}`)
     }
 
-    console.log(findTexts);
+    // console.log(findTexts);
   };
 
   // video
@@ -46,9 +47,11 @@ const Context = ({ children }) => {
       toast.success(`Video Call to ${findFriends.name}`)
     }
 
-    console.log(findVideos);
+    // console.log(findVideos);
   };
 
+  // filtter
+  
   // -----------------------------------------------------------------------------------
   const data = {
     setFriendsData,
@@ -58,7 +61,8 @@ const Context = ({ children }) => {
     handleText,
     textFunction,
     handleVideo,
-    videoFunction
+    videoFunction,
+   
   };
   return (
     <friendContext.Provider value={data}>{children}</friendContext.Provider>
