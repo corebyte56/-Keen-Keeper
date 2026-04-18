@@ -28,7 +28,7 @@ const Context = ({ children }) => {
     const findTexts = friendsData.find((friend) => friend.id === findFriends.id);
 
     if (findTexts) {
-      setCallFunction([...textFunction, findTexts]);
+      setTextFunction([...textFunction, findTexts]);
       toast.success(`Texted to ${findFriends.name}`)
     }
 
@@ -41,7 +41,8 @@ const Context = ({ children }) => {
     friendsData,
     handleCall,
     callFunction,
-    handleText
+    handleText,
+    textFunction
   };
   return (
     <friendContext.Provider value={data}>{children}</friendContext.Provider>
