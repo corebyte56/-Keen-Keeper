@@ -7,9 +7,9 @@ const StateChart = () => {
     useContext(friendContext);
 
   const chartData = [
-    { name: "Calls", value: callFunction.length, fill: "#0088FE" },
-    { name: "Texts", value: textFunction.length, fill: "#00C49F" },
-    { name: "Videos", value: videoFunction.length, fill: "#FFBB28" },
+    { name: "Calls", value: callFunction.length, fill: "#22C55E" },
+    { name: "Texts", value: textFunction.length, fill: "#3B82F6" },
+    { name: "Videos", value: videoFunction.length, fill: "#A855F7" },
   ];
 
   return (
