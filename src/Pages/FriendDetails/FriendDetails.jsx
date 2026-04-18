@@ -12,7 +12,7 @@ import { friendContext } from "../../Context/Context";
 
 const FriendDetails = () => {
   // Context   
-  const { handleCall } = useContext(friendContext);
+  const { handleCall, handleText } = useContext(friendContext);
 
   const { Id } = useParams();
 
@@ -150,7 +150,7 @@ const FriendDetails = () => {
             <div className="grid grid-cols-3 gap-4">
               <button
               onClick={()=>handleCall(findFriends)}
-              
+
                 className="flex flex-col items-center gap-2 p-4 rounded-xl border cursor-pointer
               hover:-translate-y-1 hover:shadow-lg hover:scale-105 transition-all duration-200"
               >
@@ -159,6 +159,7 @@ const FriendDetails = () => {
               </button>
 
               <button
+              onClick={()=>handleText(findFriends)}
                 className="flex flex-col items-center gap-2 p-4 rounded-xl border cursor-pointer
               hover:-translate-y-1 hover:shadow-lg hover:scale-105 transition-all duration-200"
               >

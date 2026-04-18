@@ -1,6 +1,6 @@
 import React from 'react'
 import TimeLineHeader from '../../Compnents/TimeLineHeader/TimeLineHeader'
-import TimeLineCard from '../../Compnents/TimeLineCard]/TimeLineCard'
+import TimeLineCard from '../../Compnents/TimeLineCard/TimeLineCard'
 
 
 const TimeLine = () => {
