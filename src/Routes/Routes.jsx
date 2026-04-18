@@ -7,7 +7,7 @@ import MainLayout from "../Layout/mainLayout";
 import TimeLine from "../Pages/TimeLine/TimeLine";
 import States from "../Pages/States/States";
 import FriendDetails from "../Pages/FriendDetails/FriendDetails";
-import FriendData from "../data/friendData.json";
+import FriendData from "../Data/friendData.json";
 
 export const router = createBrowserRouter([
   {
